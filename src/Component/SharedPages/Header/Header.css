@@ -1,0 +1,20 @@
+.header-title{
+    color:blueviolet;
+    font-size: 30px;
+  }
+  
+  .header-title2{
+    color:chartreuse;
+    font-size: 24px;
+    
+  
+  }
+  
+  .header-compo{
+    margin-left: 5px;
+  }
+  
+  .header-compo:hover{
+    background: rgb(73, 219, 219);
+    border-radius: 10px;
+  }
