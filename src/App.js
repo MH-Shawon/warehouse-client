@@ -4,6 +4,7 @@ import './App.css';
 import Footer from './Component/SharedPages/Footer/Footer';
 import Header from './Component/SharedPages/Header/Header';
 import NotFound from './Component/SharedPages/NotFound/NotFound';
+import Home from './Home/Home';
 
 
 
@@ -11,11 +12,13 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <h3>Welcodme to my WareHouse</h3>
+
       <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
-    <Footer></Footer>
+      <Footer></Footer>
     </div>
   );
 }

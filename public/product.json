@@ -1,0 +1,85 @@
+[
+    {
+      "id": 1,
+      "name": "Apple iMac",
+      "price": 1500,
+      "description": "Transforming from underpowered to one of the fastest ultrathin laptops around, the MacBook Air with M1 is the best Mac for most people. It turbocharges that familiar design.",
+      "img": "  https://i.ibb.co/RYfXjYJ/apple4.png",
+  
+      "quantity": 5,
+      "supplierName": "Mahmud Sanjid"
+    },
+    {
+      "id": 2,
+      "name": "Apple Air Pod",
+      "price": 1200,
+      "description": "Notebook Series - MacBook Pro, Processor Brand - Apple, Processor Model - Intel Core i5, 2.0GHz quad-core 10th-generation Intel Core i5 Processor, Turbo Boost up to 3.8GHz, Display Size - 13.3 Inch.",
+      "img": "  https://i.ibb.co/pdMcNsc/apple2.png",
+  
+      "quantity": 5,
+      "supplierName": "Asib Rahaman"
+    },
+    {
+      "id": 3,
+      "name": "Dell Inspiron",
+      "price": 900,
+      "description": "The Inspiron 16 Plus (7610) is a top-notch value in a burgeoning category of laptops with 16-inch displays, capable Intel H-series CPUs, and Nvidia GeForce RTX graphics.",
+      "img": "  https://i.ibb.co/DgpJnVS/dell4.png",
+      "quantity": 5,
+      "supplierName": "Sadi Rifat"
+    },
+    {
+      "id": 4,
+      "name": "Dell XPS",
+      "price": 700,
+      "description": "Dell's multiple-award-winning XPS 13 ultraportable approaches perfection with a high-resolution OLED touch screen. It's not cheap, but it's irresistible once you lay eyes on it",
+      "img": "  https://i.ibb.co/rdtxHzj/dell3.png",
+      "quantity": 5,
+      "supplierName": "Kamruzzaman Abir"
+    },
+    {
+      "id": 5,
+      "name": "HP Envy",
+      "price": 700,
+      "description": "HP Envy 15 (2021) is a Windows 10 Home laptop with a 15.60-inch display that has a resolution of 1920x1080 pixels. It is powered by a Core i7 processor.",
+      "img": "  https://i.ibb.co/vX5hYs5/hp3.png",
+      "quantity": 5,
+      "supplierName": "Kawser Habib"
+    },
+    {
+      "id": 6,
+      "name": "HP Chromebook",
+      "price": 700,
+      "description": "HP Chromebook x360 14a (Intel) is a Chrome OS laptop with a 14.00-inch display that has a resolution of 1366x768 pixels. It is Celeron processor and it comes with 4GB of RAM.",
+      "img": "  https://i.ibb.co/PDX10QJ/hp2.png",
+      "quantity": 5,
+      "supplierName": "Ashraful Islam"
+    },
+    {
+      "id": 7,
+      "name": "Apple MacBook",
+      "price": 1300,
+      "description": "The 14-inch and 16-inch MacBook Pros are powered by the M1 Pro or M1 Max processor. Either option is overkill for most users, but they do feature some other tantalizing upgrades. ",
+      "img": "  https://i.ibb.co/gj0GQFR/apple3.png",
+      "quantity": 5,
+      "supplierName": "Masudul Islam"
+    },
+    {
+      "id": 8,
+      "name": "Dell Alienware",
+      "price": 700,
+      "description": "The Dell Inspiron 15 3000 (3511) excels as a budget laptop that can handle day-to-day tasks and some very light gaming, and it even comes with Windows 11—all for under $400.",
+      "img": "  https://i.ibb.co/B4txRRD/dell1.png",
+      "quantity": 5,
+      "supplierName": "Limon Hasan"
+    },
+    {
+      "id": 9,
+      "name": "HP Pavilion",
+      "price": 700,
+      "description": "HP Pavilion 15 EG2036TU is a Windows 11 laptop with a 15.60-inch display that has a resolution of 1920x1080 pixels. It is powered by Core i5 processor and it comes with 16GB of RAM.",
+      "img": "  https://i.ibb.co/SJkzdjz/hp1.png",
+      "quantity": 5,
+      "supplierName": "Sohan Khan"
+    }
+  ]
