@@ -1,8 +1,10 @@
 
+import { ToastContainer } from 'react-bootstrap';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Login from './Component/Login/Login/Login';
 import SignUp from './Component/Login/SignUp/SignUp';
+import SocialLogin from './Component/Login/SocialLogin/SocialLogin';
 import Animation from './Component/MainPages/Animation/Animation';
 import Blogs from './Component/MainPages/Blogs/Blogs';
 import Items from './Component/MainPages/Items/Items';
@@ -29,8 +31,10 @@ function App() {
         <Route path='/inventory' element={<Items></Items>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='/social' element={<SocialLogin></SocialLogin>}></Route>
 
       </Routes>
+      
       <Footer></Footer>
     </div>
   );
