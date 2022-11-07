@@ -1,8 +1,9 @@
-import { Toast } from 'bootstrap';
+
 import React, { useRef } from 'react';
-import { Button, Spinner } from 'react-bootstrap';
+import { Button, Spinner,  } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css'
@@ -43,29 +44,29 @@ const Login = () => {
     }
     const navigateSignup = () => {
         navigate("/signup");
-      };
-    
-      const resetPassword = async () => {
+    };
+
+    const resetPassword = async () => {
         const email = emailRef.current.value;
-    
+
         if (email) {
-          await sendPasswordResetEmail(email);
-    
-          Toast.success("Sent email");
+            await sendPasswordResetEmail(email);
+
+            toast.success("Sent email");
         } else {
-          Toast.error1("Email Address Not Found");
+            toast.error1("Email Address Not Found");
         }
-      };
-    
-      if (loading3 || sending) {
+    };
+
+    if (loading3 || sending) {
         return <Spinner animation="grow" variant="dark" />;
-      }
-    
+    }
+
     return (
         <div className="wrapper">
             <div className="text-center mb-4 name">LOGIN</div>
             <div className="text-center">
-                
+
             </div>
 
             <form onSubmit={handleLogin} className="p-3 mt-3">
@@ -97,24 +98,24 @@ const Login = () => {
             </form>
             {errorElement}
             <div className=" d-flex w-75 mx-auto justify-content-between align-items-center fs-6">
-                <Link
-                    to="/login"
-                    onClick={resetPassword}
-                    className="text-primary pe-auto text-decoration-none"
-                >
-                    Forget Password
-                </Link>{" "}
-                <span className="text-dark">or</span>
-                <Link
-                    to="/signup"
-                    onClick={navigateSignup}
-                    className="text-primary pe-auto text-decoration-none"
-                >
-                    Sign Up
-                </Link>
+                <p>Are you new? <Link to="/signup" className='text-primary pe-auto text-decoration-none' onClick={navigateSignup}>Please Register</Link> </p>
                 
+                <p>Forget password?
+
+                    <Link
+                        to="/login"
+                        onClick={resetPassword}
+                        className="text-primary pe-auto text-decoration-none"
+                    >
+                        Reset password
+                    </Link>{" "}
+
+
+                </p>
+
             </div>
             <SocialLogin></SocialLogin>
+            
         </div>
     );
 };
