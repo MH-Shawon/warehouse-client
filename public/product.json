@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Asus",
       "price": 1500,
-      "description": "Transforming from underpowered to one of the fastest ultrathin laptops around, the MacBook Air with M1 is the best Mac for most people. It turbocharges that familiar design.",
+      "description": "The legend has evolved! The ROG Phone 6 Pro is the latest incarnation of world-beating gaming phone. It harnesses the brute gaming power of the latest Qualcomm® Snapdragon®.",
       "img": "  https://i.ibb.co/rx6956c/asus.jpg",
   
       "quantity": 5,
@@ -13,7 +13,7 @@
       "id": 2,
       "name": "Asus Rock",
       "price": 1200,
-      "description": "Notebook Series - MacBook Pro, Processor Brand - Apple, Processor Model - Intel Core i5, 2.0GHz quad-core 10th-generation Intel Core i5 Processor, Turbo Boost up to 3.8GHz, Display Size - 13.3 Inch.",
+      "description": "Fueled for winning by the latest Qualcomm® Snapdragon® 888+ 5G mobile platform, ROG Phone 5s launches your mobile gaming experience into the next dimension..",
       "img": "  https://i.ibb.co/4fT8vdx/asus2.jpg",
   
       "quantity": 5,
@@ -23,7 +23,7 @@
       "id": 3,
       "name": "Google Pixel",
       "price": 900,
-      "description": "The Inspiron 16 Plus (7610) is a top-notch value in a burgeoning category of laptops with 16-inch displays, capable Intel H-series CPUs, and Nvidia GeForce RTX graphics.",
+      "description": "Google's Pixel phones are our favorite Android phones here at WIRED, and they have been for a few years.They have industry-leading cameras, get speedy software and security updates directly from Google.",
       "img": "  https://i.ibb.co/RjH8Fk3/pixel2.jpg",
       "quantity": 5,
       "supplierName": "Sadi Rifat"
@@ -32,7 +32,7 @@
       "id": 4,
       "name": "Google Pixel 4xl",
       "price": 700,
-      "description": "Dell's multiple-award-winning XPS 13 ultraportable approaches perfection with a high-resolution OLED touch screen. It's not cheap, but it's irresistible once you lay eyes on it",
+      "description": "Google's Pixel phones are our favorite Android phones here at WIRED, and they have been for a few years.They have industry-leading cameras, get speedy software and security updates directly from Google.",
       "img": "  https://i.ibb.co/8cvSZBp/g-pixeljpg.jpg",
       "quantity": 5,
       "supplierName": "Kamruzzaman Abir"
@@ -41,7 +41,7 @@
       "id": 5,
       "name": "IPhoneX",
       "price": 700,
-      "description": "HP Envy 15 (2021) is a Windows 10 Home laptop with a 15.60-inch display that has a resolution of 1920x1080 pixels. It is powered by a Core i7 processor.",
+      "description": "If you want the best iPhone regardless of price, look no further than the iPhone 14 Pro Max. All of the big changes Apple made to its Pro lineup are on display in this phone — the faster A16 Bionic processor.",
       "img": "  https://i.ibb.co/cDz1kjr/Iphone2.jpg",
       "quantity": 5,
       "supplierName": "Kawser Habib"
@@ -50,7 +50,7 @@
       "id": 6,
       "name": "IPhone",
       "price": 700,
-      "description": "HP Chromebook x360 14a (Intel) is a Chrome OS laptop with a 14.00-inch display that has a resolution of 1366x768 pixels. It is Celeron processor and it comes with 4GB of RAM.",
+      "description": "If you want the best iPhone regardless of price, look no further than the iPhone 14 Pro Max. All of the big changes Apple made to its Pro lineup are on display in this phone — the faster A16 Bionic processor.",
       "img": "  https://i.ibb.co/W2K6yhV/Iphone.jpg",
       "quantity": 5,
       "supplierName": "Ashraful Islam"

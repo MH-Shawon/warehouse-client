@@ -5,8 +5,23 @@ const ManageItems = () => {
     const [items, setItems] = useItems();
 
     const handleDelete = (id) => {
-        const proceed = window.confirm("Are you sure?");
-    };
+      const proceed = window.confirm('Are you sure??');
+      if (proceed) {
+          const url = `http://localhost:5000/phones/${id}`;
+          fetch(url, {
+              method: 'DELETE'
+          })
+              .then(res => res.json())
+              .then(data => {
+                  console.log(data);
+                  const reamaining = items.filter(item => item._id !== id);
+                  setItems(reamaining);
+                  
+              })
+
+      }
+  }
+
 
     return (
         <div className="container">

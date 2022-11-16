@@ -5,7 +5,8 @@ const useItems = () => {
   
 
     useEffect(() => {
-      fetch('product.json')
+      
+      fetch("https://obscure-earth-30116.herokuapp.com/phones")
         .then((res) => res.json())
         .then((data) => setItems(data));
     }, []);
