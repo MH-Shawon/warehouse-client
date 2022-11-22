@@ -1,19 +1,12 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
-import { Form } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+
+import { Link, useParams } from 'react-router-dom';
+import useOrderDetail from '../../Hooks/useOrder';
+
 
 const ItemDetails = () => {
 
     const { phoneId } = useParams();
-  const [phones, setphones] = useState({});
-
-  useEffect(()=>{
-    const url = `http://localhost:5000/phones/${phoneId}`;
-    fetch(url)
-    .then(res=>res.json())
-    .then(data => setphones(data))
-  },[])
+     const [phones] = useOrderDetail(phoneId)
   
 
 
@@ -21,7 +14,7 @@ const ItemDetails = () => {
     return (
         <div className="m-3 p-3 text-start">
       <div className="d-flex p-2">
-        <div className="card w-50 shadow-lg border-0 p-3">
+        <div className="card w-50 mx-auto  shadow-lg border-0 p-3">
           <h1 className="text-center text-danger mb-5">Item Details</h1>
           <div className="d-flex">
             <div>
@@ -41,30 +34,19 @@ const ItemDetails = () => {
           </div>
           <div className="card-body text-center">
             <p className="card-text">{phones.description}</p>
-            <button
-              // onClick={() => handleDelivered(_id)}
-              className="btn btn-primary mt-3"
+
+            <Link to={`/placeorder/${phoneId}`}>
+
+            <button className="btn btn-primary mt-3"
             >
-              Delivered{" "}
+             Place Order
             </button>
+            
+            </Link>
+            
           </div>
         </div>
-        <div className="w-50 mx-auto ms-2 border-0">
-          <h1 className="text-center text-info">Re-Stock Item</h1>
-          <Form  className="row g-3">
-            <div className=" w-50 mx-auto">
-              <input
-                type="number"
-                className="form-control"
-                name="number"
-                placeholder="Input Number of Quantity"
-              />
-              <button type="submit" className="btn btn-primary mt-3">
-                Add Quantity
-              </button>
-            </div>
-          </Form>
-        </div>
+        
       </div>
     </div>
   );

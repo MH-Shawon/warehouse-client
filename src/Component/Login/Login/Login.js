@@ -1,9 +1,11 @@
 
+import axios from 'axios';
 import React, { useRef } from 'react';
-import { Button, Spinner,  } from 'react-bootstrap';
+import { Button, Spinner, } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css'
@@ -32,16 +34,19 @@ const Login = () => {
         );
     }
 
-    const handleLogin = (event) => {
+    const handleLogin = async event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        signInWithEmailAndPassword(email, password);
+        const res = await signInWithEmailAndPassword(email, password);
+        console.log(res);
+       const {data} = await axios.post(`http://localhost:5000/accesstoken`, {email});
+       console.log(data);
+       localStorage.setItem('accessToken', data.accessToken);
+       navigate(from, { replace: true });
     };
 
-    if (user) {
-        navigate(from, { replace: true });
-    }
+    
     const navigateSignup = () => {
         navigate("/signup");
     };
@@ -52,9 +57,9 @@ const Login = () => {
         if (email) {
             await sendPasswordResetEmail(email);
 
-            toast.success("Sent email");
+            toast("Sent email");
         } else {
-            toast.error1("Email Address Not Found");
+            toast("Email Address Not Found");
         }
     };
 
@@ -99,7 +104,7 @@ const Login = () => {
             {errorElement}
             <div className=" d-flex w-75 mx-auto justify-content-between align-items-center fs-6">
                 <p>Are you new? <Link to="/signup" className='text-primary pe-auto text-decoration-none' onClick={navigateSignup}>Please Register</Link> </p>
-                
+
                 <p>Forget password?
 
                     <Link
@@ -115,7 +120,7 @@ const Login = () => {
 
             </div>
             <SocialLogin></SocialLogin>
-            
+
         </div>
     );
 };

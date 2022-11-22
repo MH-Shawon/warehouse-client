@@ -19,7 +19,7 @@ const Item = ({item}) => {
                     <h6>Price: ${price}</h6>
                     <h6>Quantity: {quantity}</h6>
                     <p className="card-text text-start">{description}</p>
-                    <button onClick={() => navigateItems(_id)} className="border-0 bg-primary w-100 rounded text-white fw-bold p-2">Update</button>
+                    <button onClick={() => navigateItems(_id)} className="border-0 bg-primary w-100 rounded text-white fw-bold p-2">Details</button>
                 </div>
             </div>
         </div>

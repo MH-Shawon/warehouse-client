@@ -18,7 +18,9 @@ import AddItem from './Component/MainPages/AddItem/AddItem';
 import { ToastContainer } from 'react-toastify';
 import ItemDetails from './Component/MainPages/ItemsDetails/ItemDetails';
 import ManageItems from './Component/MainPages/ManageItems/ManageItems';
-import MyItems from './Component/MainPages/MyItems/MyItems';
+import Cart from './Component/MainPages/Cart/Cart'
+import AllPhones from './Component/MainPages/AllPhones/AllPhones';
+import PlaceOrder from './Component/PlaceOrder/PlaceOrder';
 
 
 
@@ -35,25 +37,24 @@ function App() {
 
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/phones' element={<Items></Items>}></Route>
+
+        <Route path='/allphones' element={<AllPhones></AllPhones>}></Route>
+
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/social' element={<SocialLogin></SocialLogin>}></Route>
         <Route
-          path="/phones/:phoneId"
-          element={
-            <RequiredAuth>
-              <ItemDetails></ItemDetails>
-            </RequiredAuth>
-          }
+          path="/phones/:phoneId"element={<ItemDetails></ItemDetails>}
         ></Route>
         <Route
-          path="/myitems"
+          path="/placeorder/:phoneId"
           element={
             <RequiredAuth>
-              <MyItems></MyItems>
+              <PlaceOrder></PlaceOrder>
             </RequiredAuth>
           }
         ></Route>
+
         <Route
           path="/additem"
           element={
@@ -70,13 +71,21 @@ function App() {
             </RequiredAuth>
           }
         ></Route>
+        <Route
+          path="/ordercart"
+          element={
+            <RequiredAuth>
+              <Cart></Cart>
+            </RequiredAuth>
+          }
+        ></Route>
 
         <Route path='*' element={<NotFound></NotFound>}></Route>
 
       </Routes>
-
+      
       <Footer></Footer>
-      <ToastContainer></ToastContainer>
+      <ToastContainer />
     </div>
   );
 }

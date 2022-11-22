@@ -25,7 +25,7 @@ const Header = () => {
             <Nav.Link className="text-white header-compo" as={Link} to="/home">
               Home
             </Nav.Link>
-            <Nav.Link className="text-white header-compo" as={Link} to="/phones">
+            <Nav.Link className="text-white header-compo" as={Link} to="/allphones">
             Phones
             </Nav.Link>
             
@@ -48,9 +48,9 @@ const Header = () => {
                 <Nav.Link
                   className="text-white header-compo"
                   as={Link}
-                  to="/myitems"
+                  to="/ordercart"
                 >
-                  My Items
+                  Cart
                 </Nav.Link>
                 <Nav.Link className="text-white header-compo" as={Link} to="/blogs">
               Blogs

@@ -18,7 +18,7 @@ const Items = () => {
         }
         </div>
         <div className='text-center'>
-          <Link to='/myitems'><button className='border-0 my-4 bg-success rounded text-white fw-bold p-2'>View All Items</button></Link>
+          <Link to='/allphones'><button className='border-0 my-4 bg-success rounded text-white fw-bold p-2'>View All Items</button></Link>
         </div>
       </div>
     );

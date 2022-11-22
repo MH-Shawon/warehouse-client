@@ -26,7 +26,7 @@ const ManageItems = () => {
     return (
         <div className="container">
         <h1 className="text-center text-white bg-info w-50 mx-auto p-2 m-2 rounded">
-          My Items : {items.length}
+          Manage Items:{items.length}
         </h1>
         <table className="table border border-dark border-3">
           <thead>
@@ -41,7 +41,7 @@ const ManageItems = () => {
           </thead>
           {items.map((item) => (
             <tbody>
-              <tr key={item._id}>
+              <tr key={item.id}>
                 <th scope="row">{item.name}</th>
   
                 <td>{item.price}</td>
