@@ -15,7 +15,7 @@ const AddItem = () => {
 
   const onSubmit = data => {
     console.log(data);
-    const url = `http://localhost:5000/phones`;
+    const url = `https://obscure-earth-30116.herokuapp.com/phones`;
     fetch(url, {
       method: 'POST',
       headers: {

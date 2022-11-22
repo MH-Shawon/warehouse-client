@@ -7,7 +7,7 @@ const useOrderDetail = phoneId => {
     useEffect(() => {
         
         
-        fetch(`http://localhost:5000/phones/${phoneId}`)
+        fetch(`https://obscure-earth-30116.herokuapp.com/phones/${phoneId}`)
             .then(res => res.json())
             .then(data => setPhones(data))
     }, [phoneId]);

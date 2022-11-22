@@ -18,7 +18,7 @@ console.log(user.email);
   useEffect(() => {
     const getOrders = async () => {
       const email = user.email;
-      const url = `http://localhost:5000/orders?email=${email}`;
+      const url = `https://obscure-earth-30116.herokuapp.com/orders?email=${email}`;
       console.log(localStorage.getItem("accessToken"))
       try {
         const { data } = await axios.get(url, {
@@ -44,7 +44,7 @@ console.log(user.email);
   const handleOrderDelete = (id) => {
     const proceed = window.confirm('Are you sure??');
     if (proceed) {
-      const url = `http://localhost:5000/order/${id}`;
+      const url = `https://obscure-earth-30116.herokuapp.com/order/${id}`;
       fetch(url, {
         method: 'DELETE'
       })
