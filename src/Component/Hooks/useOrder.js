@@ -7,7 +7,7 @@ const useOrderDetail = phoneId => {
     useEffect(() => {
         
         
-        fetch(`https://obscure-earth-30116.herokuapp.com/phones/${phoneId}`)
+        fetch(`https://ware-house-server-smoky.vercel.app/phones/${phoneId}`)
             .then(res => res.json())
             .then(data => setPhones(data))
     }, [phoneId]);

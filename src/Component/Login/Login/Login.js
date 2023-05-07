@@ -40,7 +40,7 @@ const Login = () => {
         const password = passwordRef.current.value;
         const res = await signInWithEmailAndPassword(email, password);
         console.log(res);
-       const {data} = await axios.post(`https://obscure-earth-30116.herokuapp.com/accesstoken`, {email});
+       const {data} = await axios.post(`https://ware-house-server-smoky.vercel.app/accesstoken`, {email});
        console.log(data);
        localStorage.setItem('accessToken', data.accessToken);
        navigate(from, { replace: true });

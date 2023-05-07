@@ -6,7 +6,7 @@ const useItems = () => {
 
     useEffect(() => {
       
-      fetch("https://obscure-earth-30116.herokuapp.com/phones")
+      fetch("https://ware-house-server-smoky.vercel.app/phones")
         .then((res) => res.json())
         .then((data) => setItems(data));
     }, []);
