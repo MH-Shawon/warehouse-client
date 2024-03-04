@@ -7,7 +7,7 @@ const ManageItems = () => {
     const handleDelete = (id) => {
       const proceed = window.confirm('Are you sure??');
       if (proceed) {
-          const url = `https://ware-house-server-smoky.vercel.app/phones/${id}`;
+          const url = `https://ware-house-server-zeta.vercel.app/phones/${id}`;
           fetch(url, {
               method: 'DELETE'
           })

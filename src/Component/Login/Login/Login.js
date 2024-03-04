@@ -40,7 +40,7 @@ const Login = () => {
         const password = passwordRef.current.value;
         const res = await signInWithEmailAndPassword(email, password);
         console.log(res);
-       const {data} = await axios.post(`https://ware-house-server-smoky.vercel.app/accesstoken`, {email});
+       const {data} = await axios.post(`https://ware-house-server-zeta.vercel.app/accesstoken`, {email});
        console.log(data);
        localStorage.setItem('accessToken', data.accessToken);
        navigate(from, { replace: true });
@@ -68,7 +68,7 @@ const Login = () => {
     }
 
     return (
-        <div className="wrapper">
+        <div className="wrapper border">
             <div className="text-center mb-4 name">LOGIN</div>
             <div className="text-center">
 
@@ -102,8 +102,8 @@ const Login = () => {
                 </Button>
             </form>
             {errorElement}
-            <div className=" d-flex w-75 mx-auto justify-content-between align-items-center fs-6">
-                <p>Are you new? <Link to="/signup" className='text-primary pe-auto text-decoration-none' onClick={navigateSignup}>Please Register</Link> </p>
+            <div className=" d-flex w-85 mx-auto justify-content-between align-items-center fs-6">
+                <p>Are you new? <Link to="/signup" className='text-primary px-auto text-decoration-none' onClick={navigateSignup}>Please Register</Link> </p>
 
                 <p>Forget password?
 

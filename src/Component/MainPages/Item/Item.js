@@ -11,7 +11,7 @@ const Item = ({item}) => {
     };
     return (
         <div className="col mt-5">
-            <div className="card ms-4 shadow-lg border-0">
+            <div className="card ms-4 border-0">
                 <img src={img} className="card-img-top p-4" alt="..." />
                 <div className="card-body">
                     <h6 className="card-title fw-bold">{name}</h6>

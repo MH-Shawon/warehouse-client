@@ -6,7 +6,7 @@ const useItems = () => {
 
     useEffect(() => {
       
-      fetch("https://ware-house-server-smoky.vercel.app/phones")
+      fetch("https://ware-house-server-zeta.vercel.app/phones")
         .then((res) => res.json())
         .then((data) => setItems(data));
     }, []);

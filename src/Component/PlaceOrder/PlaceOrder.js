@@ -26,7 +26,7 @@ const PlaceOrder = () => {
             phone: event.target.phone.value,
         }
         
-        axios.post('https://ware-house-server-smoky.vercel.app/order', order)
+        axios.post('https://ware-house-server-zeta.vercel.app/order', order)
         .then(response =>{
             const {data} = response;
             if(data.insertedId){

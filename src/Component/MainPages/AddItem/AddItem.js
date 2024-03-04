@@ -15,7 +15,7 @@ const AddItem = () => {
 
   const onSubmit = data => {
     console.log(data);
-    const url = `https://ware-house-server-smoky.vercel.app/phones`;
+    const url = `https://ware-house-server-zeta.vercel.app/phones`;
     fetch(url, {
       method: 'POST',
       headers: {

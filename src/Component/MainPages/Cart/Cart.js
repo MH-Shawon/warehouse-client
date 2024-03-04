@@ -18,7 +18,7 @@ console.log(user.email);
   useEffect(() => {
     const getOrders = async () => {
       const email = user.email;
-      const url = `https://ware-house-server-smoky.vercel.app/orders?email=${email}`;
+      const url = `https://ware-house-server-zeta.vercel.app/orders?email=${email}`;
       console.log(localStorage.getItem("accessToken"))
       try {
         const { data } = await axios.get(url, {
@@ -44,7 +44,7 @@ console.log(user.email);
   const handleOrderDelete = (id) => {
     const proceed = window.confirm('Are you sure??');
     if (proceed) {
-      const url = `https://ware-house-server-smoky.vercel.app/order/${id}`;
+      const url = `https://ware-house-server-zeta.vercel.app/order/${id}`;
       fetch(url, {
         method: 'DELETE'
       })
