@@ -1,0 +1,35 @@
+.buttom-img {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  
+  .buttom-img img {
+    width: 250px;
+    margin-right: 20px;
+    border-radius: 40px 20px 40px 20px;
+    box-shadow: 10px 10px 10px black;
+    animation: swing 3s ease-in-out 0s infinite alternate;
+  }
+  
+  /* Create Animation Video */
+  @keyframes swing {
+    0% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(-25deg);
+    }
+  }
+  
+  
+  @media only screen and (max-width: 576px) {
+    .buttom-img {
+      display: grid;
+      align-items: center;
+    }
+    .buttom-img img {
+      margin: 5px 0px;
+    }
+  }

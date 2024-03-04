@@ -1,0 +1,85 @@
+[
+    {
+      "id": 1,
+      "name": "Asus",
+      "price": 1500,
+      "description": "The legend has evolved! The ROG Phone 6 Pro is the latest incarnation of world-beating gaming phone. It harnesses the brute gaming power of the latest Qualcomm® Snapdragon®.",
+      "img": "  https://i.ibb.co/rx6956c/asus.jpg",
+  
+      "quantity": 5,
+      "supplierName": "Mh Shawon"
+    },
+    {
+      "id": 2,
+      "name": "Asus Rock",
+      "price": 1200,
+      "description": "Fueled for winning by the latest Qualcomm® Snapdragon® 888+ 5G mobile platform, ROG Phone 5s launches your mobile gaming experience into the next dimension..",
+      "img": "  https://i.ibb.co/4fT8vdx/asus2.jpg",
+  
+      "quantity": 5,
+      "supplierName": "Asib Rahaman"
+    },
+    {
+      "id": 3,
+      "name": "Google Pixel",
+      "price": 900,
+      "description": "Google's Pixel phones are our favorite Android phones here at WIRED, and they have been for a few years.They have industry-leading cameras, get speedy software and security updates directly from Google.",
+      "img": "  https://i.ibb.co/RjH8Fk3/pixel2.jpg",
+      "quantity": 5,
+      "supplierName": "Sadi Rifat"
+    },
+    {
+      "id": 4,
+      "name": "Google Pixel 4xl",
+      "price": 700,
+      "description": "Google's Pixel phones are our favorite Android phones here at WIRED, and they have been for a few years.They have industry-leading cameras, get speedy software and security updates directly from Google.",
+      "img": "  https://i.ibb.co/8cvSZBp/g-pixeljpg.jpg",
+      "quantity": 5,
+      "supplierName": "Kamruzzaman Abir"
+    },
+    {
+      "id": 5,
+      "name": "IPhoneX",
+      "price": 700,
+      "description": "If you want the best iPhone regardless of price, look no further than the iPhone 14 Pro Max. All of the big changes Apple made to its Pro lineup are on display in this phone — the faster A16 Bionic processor.",
+      "img": "  https://i.ibb.co/cDz1kjr/Iphone2.jpg",
+      "quantity": 5,
+      "supplierName": "Kawser Habib"
+    },
+    {
+      "id": 6,
+      "name": "IPhone",
+      "price": 700,
+      "description": "If you want the best iPhone regardless of price, look no further than the iPhone 14 Pro Max. All of the big changes Apple made to its Pro lineup are on display in this phone — the faster A16 Bionic processor.",
+      "img": "  https://i.ibb.co/W2K6yhV/Iphone.jpg",
+      "quantity": 5,
+      "supplierName": "Ashraful Islam"
+    },
+    {
+      "id": 7,
+      "name": "One Plus",
+      "price": 1300,
+      "description": "The 14-inch and 16-inch MacBook Pros are powered by the M1 Pro or M1 Max processor. Either option is overkill for most users, but they do feature some other tantalizing upgrades. ",
+      "img": "  https://i.ibb.co/2WVznNW/One-Plus-8-Pro-425x425.jpg",
+      "quantity": 5,
+      "supplierName": "Masudul Islam"
+    },
+    {
+      "id": 8,
+      "name": "Samsung",
+      "price": 700,
+      "description": "The Dell Inspiron 15 3000 (3511) excels as a budget laptop that can handle day-to-day tasks and some very light gaming, and it even comes with Windows 11—all for under $400.",
+      "img": "  https://i.ibb.co/VNZtBzP/samsung.jpg",
+      "quantity": 5,
+      "supplierName": "Limon Hasan"
+    },
+    {
+      "id": 9,
+      "name": "Google Pixel 6pro",
+      "price": 700,
+      "description": "HP Pavilion 15 EG2036TU is a Windows 11 laptop with a 15.60-inch display that has a resolution of 1920x1080 pixels. It is powered by Core i5 processor and it comes with 16GB of RAM.",
+      "img": "  https://i.ibb.co/m4Q22Qf/g-pixel.webp",
+      "quantity": 5,
+      "supplierName": "Sohan Khan"
+    }
+  ]
