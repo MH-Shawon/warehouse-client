@@ -1,18 +1,15 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const useItems = () => {
-    const [items, setItems] = useState([]);
-  
+  const [items, setItems] = useState([]);
 
-    useEffect(() => {
-      
-      fetch("https://ware-house-server-zeta.vercel.app/phones")
-        .then((res) => res.json())
-        .then((data) => setItems(data));
-    }, []);
+  useEffect(() => {
+    fetch("https://ware-house-server-liart.vercel.app/phones")
+      .then((res) => res.json())
+      .then((data) => setItems(data));
+  }, []);
 
-  
-    return [items, setItems]
+  return [items, setItems];
 };
 
 export default useItems;

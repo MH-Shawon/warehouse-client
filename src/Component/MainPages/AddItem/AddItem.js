@@ -1,56 +1,74 @@
-import React from 'react';
-import { useAuthState } from 'react-firebase-hooks/auth';
+import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 
-
-import { useForm } from 'react-hook-form';
-import { toast } from 'react-toastify';
-import auth from '../../../firebase.init';
-
-
-
+import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
+import auth from "../../../firebase.init";
 
 const AddItem = () => {
   const [user] = useAuthState(auth);
   const { register, handleSubmit } = useForm();
 
-  const onSubmit = data => {
+  const onSubmit = (data) => {
     console.log(data);
-    const url = `https://ware-house-server-zeta.vercel.app/phones`;
+    const url = `https://ware-house-server-liart.vercel.app/phones`;
     fetch(url, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'content-type': 'application/json'
+        "content-type": "application/json",
       },
-      body: JSON.stringify(data)
+      body: JSON.stringify(data),
     })
-      .then(res => res.json())
-      .then(result => {
+      .then((res) => res.json())
+      .then((result) => {
         console.log(result);
         if (data.insertedId) {
           toast("This item has been added successfully!");
         }
-      })
-      
+      });
   };
 
-
   return (
-
-
-    <div className='w-50 mx-auto'>
+    <div className="w-50 mx-auto">
       <h2>Please add a service</h2>
-      <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
-        <input className='mb-2' placeholder='Item Name' {...register("name", { required: true, maxLength: 20 })} />
-        <textarea className='mb-2' placeholder='Description' {...register("description")} />
-        <input className='mb-2' placeholder='Item Price' type="number" {...register("price")} />
-        <input className='mb-2' placeholder='Photo URL' type="text" {...register("img")} />
-        <input className='mb-2' placeholder='Quantity' type="number" {...register("quantity")} />
-        <input className='mb-2' placeholder='Supplier Name' type="text" {...register("supplierName")} />
+      <form className="d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
+        <input
+          className="mb-2"
+          placeholder="Item Name"
+          {...register("name", { required: true, maxLength: 20 })}
+        />
+        <textarea
+          className="mb-2"
+          placeholder="Description"
+          {...register("description")}
+        />
+        <input
+          className="mb-2"
+          placeholder="Item Price"
+          type="number"
+          {...register("price")}
+        />
+        <input
+          className="mb-2"
+          placeholder="Photo URL"
+          type="text"
+          {...register("img")}
+        />
+        <input
+          className="mb-2"
+          placeholder="Quantity"
+          type="number"
+          {...register("quantity")}
+        />
+        <input
+          className="mb-2"
+          placeholder="Supplier Name"
+          type="text"
+          {...register("supplierName")}
+        />
         <input type="submit" value="Add Service" />
       </form>
     </div>
-
-
 
     // <div className="my-5">
     //   <div className="shadow-lg w-75 mx-auto p-3">

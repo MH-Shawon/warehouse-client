@@ -1,18 +1,14 @@
 import { useEffect, useState } from "react";
-    
-const useOrderDetail = phoneId => {
 
-    const [phones, setPhones] = useState({});
+const useOrderDetail = (phoneId) => {
+  const [phones, setPhones] = useState({});
 
-    useEffect(() => {
-        
-        
-        fetch(`https://ware-house-server-zeta.vercel.app/phones/${phoneId}`)
-            .then(res => res.json())
-            .then(data => setPhones(data))
-    }, [phoneId]);
+  useEffect(() => {
+    fetch(`https://ware-house-server-liart.vercel.app/phones/${phoneId}`)
+      .then((res) => res.json())
+      .then((data) => setPhones(data));
+  }, [phoneId]);
 
-    return [phones]
-
-}
+  return [phones];
+};
 export default useOrderDetail;
