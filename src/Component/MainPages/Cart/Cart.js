@@ -17,7 +17,6 @@ const Cart = () => {
     const getOrders = async () => {
       const email = user.email;
       const url = `https://ware-house-server-liart.vercel.app/orders?email=${email}`;
-      console.log(localStorage.getItem("accessToken"));
       try {
         const { data } = await axios.get(url, {
           headers: {
